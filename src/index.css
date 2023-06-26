@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  @apply text-[#0D062D];
+  font-family: "Inter", sans-serif;
+}
+.outlet-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-container {
+  @apply flex items-center min-h-[10vh] border-[#DBDBDB] border-b;
+}
+
+.logo {
+  @apply flex items-center;
+}
+.logo span {
+  @apply text-xl sm:text-base font-semibold text-[#0D062D];
+}
+.search-bar {
+  @apply border-none focus:outline-none text-[#787486] bg-transparent ml-2;
+}
+.search-bar::placeholder {
+  @apply text-[#787486];
+}
+.search-bar-container {
+  @apply flex bg-[#DBDBDB] rounded-md p-2 max-w-[50%] lg:max-w-[95%] md:max-w-[90%];
+}
+.mobile-search-bar {
+  @apply flex w-[80%] justify-center items-center;
+}
+.header-utilities {
+  @apply flex mr-3 md:hidden;
+}
+
+/* Sidebar */
+.sidebar-container {
+  @apply max-w-[240px] lg:max-w-[192px] sm:max-w-[160px] w-full max-h-[90vh] sticky top-[10%] lg:bg-white sm:min-h-screen mx-4 lg:mx-3;
+}
+.sidebar-button-container {
+  @apply flex py-1.5 items-center my-3;
+}
+.sidebar-icon {
+  @apply mr-2;
+}
+.mobile-sidebar {
+}
+
+/* PROJECT PREVIEW */
+.project-preview-container {
+  @apply min-h-[90vh] mt-2 mx-6;
+}
+
+.project-hero-section {
+  @apply flex justify-between items-center my-8 sm:flex-col;
+}
+.dropdown-btn {
+  @apply flex items-center border-[#787486] border px-3 py-1.5 rounded-md;
+}
+.project-util-section {
+  @apply flex justify-between items-center;
+}
+.project-tasks-container-section {
+  @apply flex justify-center items-start mt-8 flex-wrap;
+}
+
+/*TASKS CONTAINER CARD*/
+.tasks-container-card {
+  @apply max-w-sm w-full bg-[#F5F5F5] min-h-[10vh] rounded-t-2xl mt-2 mr-2;
+}
+.tasks-container-card-title-section {
+  @apply flex items-center py-4 mx-2.5 border-b-[3.5px];
+}
+.tasks-count {
+  @apply text-[12px] text-[#625F6D] font-medium bg-[#E0E0E0] rounded-full py-[0.17rem] px-2 ml-2;
+}
+
+.tasks-container {
+  @apply flex flex-col items-center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+  .mobile-searchBar-btn {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  .more-items {
+    @apply hidden;
+  }
+}
+@media (max-width: 370px) {
+  .user-info {
+    display: none;
+  }
+  .avatar-group {
+    display: none;
+  }
+  .dropdown-btn span {
+    @apply hidden;
+  }
+  .mobile-search-bar {
+    @apply w-full;
+  }
+}
