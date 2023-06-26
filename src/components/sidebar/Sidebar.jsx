@@ -57,14 +57,14 @@ function Sidebar(props) {
             />
           </div>
           <div className="bg-[#F5F5F5] rounded-2xl flex flex-col items-center">
-            <span className="text-sm font-medium ">Thoughts Time</span>
-            <span className="text-center text-xs text-[#787486]">
+            <span className="text-sm font-medium my-3">Thoughts Time</span>
+            <span className="text-center text-xs text-[#787486] mb-2">
               We dont have any notice for you, till then you can share your
               thoughts with your peers.
             </span>
             <a
               href="#"
-              className="text-sm text-center py-1.5 bg-white rounded-md w-[90%]"
+              className="text-sm text-center py-1.5 bg-white rounded-md w-[90%] mb-2"
             >
               Write a message
             </a>

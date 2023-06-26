@@ -17,7 +17,7 @@ function App() {
       zIndex: "20",
       background: "white",
       border: "none",
-      top: "8%",
+      top: "9%",
       padding: "0px",
       maxHeight: "90vh",
       width: "100%",
