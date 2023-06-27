@@ -48,6 +48,9 @@ body {
 .sidebar-container {
   @apply max-w-[240px] lg:max-w-[192px] sm:max-w-[160px] h-[100vh] w-full sticky top-[10%] lg:bg-white sm:min-h-screen mx-4 lg:mx-3;
 }
+.sidebar-projects-section {
+  max-height: calc(100% - 265px);
+}
 .sidebar-button-container {
   @apply flex py-1.5 items-center my-3;
 }

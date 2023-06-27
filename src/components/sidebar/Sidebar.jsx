@@ -20,7 +20,7 @@ function Sidebar(props) {
           return <SidebarButton key={idx} {...data} />;
         })}
       </div>
-      <div>
+      <div className="min-h-[10vh] overflow-auto sidebar-projects-section">
         <div className="flex justify-between items-center my-3">
           <span className="text-xs text-[#787486]">MY PROJECTS</span>
           <div>

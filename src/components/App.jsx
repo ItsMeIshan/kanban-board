@@ -19,9 +19,11 @@ function App() {
       border: "none",
       top: "9%",
       padding: "0px",
-      maxHeight: "90vh",
+      maxHeight: "calc(100% - 55px)",
       width: "100%",
       maxWidth: "240px",
+      minHeight: "40vh",
+      overflow: "auto",
     },
   };
 
